@@ -20,6 +20,8 @@ public class SampleController {
         logger.info("doB called....");
     }
 
-
-
+    @RequestMapping("/doB2")
+    public void doB2() {
+        logger.info("doB2 called....");
+    }
 }
