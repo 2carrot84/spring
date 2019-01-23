@@ -1,4 +1,4 @@
-package domain;
+package com.ecarrot.domain;
 
 public class ProductVO {
     private String name;

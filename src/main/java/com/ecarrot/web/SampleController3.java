@@ -1,6 +1,6 @@
 package com.ecarrot.web;
 
-import domain.ProductVO;
+import com.ecarrot.domain.ProductVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
