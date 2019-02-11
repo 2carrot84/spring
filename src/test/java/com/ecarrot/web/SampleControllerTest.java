@@ -11,17 +11,18 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
 
 import javax.inject.Inject;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@WebAppConfiguration(value = "web/WEB-INF")
-@ContextConfiguration(locations = {"file:web/WEB-INF/*.xml"})
+@WebAppConfiguration
+@ContextConfiguration(locations = {"file:web/WEB-INF/*t.xml"})
 public class SampleControllerTest {
     private static final Logger logger = LoggerFactory.getLogger(SampleControllerTest.class);
 
     @Inject
-    private WebAppConfiguration wac;
+    private WebApplicationContext wac;
 
     private MockMvc mockMvc;
 
